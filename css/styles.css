@@ -92,18 +92,64 @@ nav a:hover {
   background-color: #555;
 }
 
+hr {
+  border-color: gray;
+  border-top-width: 1px;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
+  width: 660px;
+  font-size: .875em;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .box_code {
-  background-color: #333333;
   border-radius: 0.3em;
   padding: 1.0rem;
 }
 
-.code{
+.code {
   line-height: 1.5;
   white-space: pre;
   font-family: "Söhne Mono", Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+}
+
+.seletor,
+.number {
+  color: #df3079;
+}
+
+.atributo,
+.string,
+ol li p strong {
+  color: #00a67d;
+}
+
+.url {
+  color: #e9950c;
+}
+
+.bg-gray-950 {
+  background-color: black;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.tag-html {
+  color: #df3079;
+}
+
+.id {
+  color: #f22c3d;
 }
