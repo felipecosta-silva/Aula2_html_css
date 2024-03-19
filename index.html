@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>HTML - CSS</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>CSS</h1>
+      <ul>
+        <li><a href="../Aula1/index.html">Aula1</a></li>
+        <li><a href="index.html">Aula2</a></li>
+        <li><a href="../Aula3/index.html">Aula3</a></li>
+        <li><a href="exemplo1.html">Exemplo</a></li>
+      </ul>
+    </nav>
+    <div class="conteiner p-15">
+      <div class="p-15 black-gray border-radius-04">
+        <div class="left">
+          <h2 class="dourado">
+            O que é CSS?
+          </h2>
+          <p>
+            CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência e o layout de páginas
+            da web escritas em HTML. Com CSS, você pode controlar a cor do texto, o tamanho das fontes, a posição dos
+            elementos, o espaçamento entre os elementos e muito mais.
+          </p>
+          <h2>Sintaxe Básica do CSS:</h2>
+          <p>
+            O CSS é composto por regras, onde cada regra é composta por um seletor e um bloco de declaração.
+          </p>
+          <li><strong>Seletor: </strong>Define a qual elemento HTML a regra se aplica.</li>
+          <li><strong>Declaração: </strong>Define as propriedades de estilo que você deseja aplicar ao elemento
+            selecionado.</li>
+          <h3>Exemplo de uma regra CSS:</h3>
+          <div class="p-4 overflow-y-auto box_code">
+            <code class="code language-css">seletor {
+            propriedade: valor;
+            }
+          </code>
+          </div>
+          <h2>Exemplo Prático:</h2>
+          <p>Vamos dar uma olhada em um exemplo simples de CSS aplicado a um documento HTML.</p>
+        </div>
+        <div class="left">
+          <h3 class="opacity-05">
+            Revisamos um pouco de html e conhecemos o CSS
+          </h3>
+        </div>
+        <h4><strong>3. Seletores</strong></h4>
+        <ul>
+          <li><strong>Seletores CSS:</strong>
+            <ul>
+              <li>Identificam os elementos HTML que serão estilizados.</li>
+              <li>Exemplos:<ul>
+                  <li><code>h1</code> - Todos os elementos <code>&lt;h1&gt;</code>.</li>
+                  <li><code>.classe</code> - Todos os elementos com a classe "classe".</li>
+                  <li><code>#id</code> - O elemento com o ID "id".</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <h4><strong>4. Propriedades e Valores</strong></h4>
+        <ul>
+          <li><strong>Propriedades CSS:</strong>
+            <ul>
+              <li>Define como os elementos serão estilizados.</li>
+              <li>Exemplos:<ul>
+                  <li><code>color</code> - Cor do texto.</li>
+                  <li><code>font-size</code> - Tamanho da fonte.</li>
+                  <li><code>background-color</code> - Cor de fundo.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <h4><strong>5. Box Model</strong></h4>
+        <ul>
+          <li><strong>Modelo de Caixa (Box Model):</strong>
+            <ul>
+              <li>Define o espaço ocupado por um elemento na página.</li>
+              <li>Composto por conteúdo, padding, border e margin.</li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <h4><strong>6. Estilizando Elementos</strong></h4>
+        <ul>
+          <li>
+            <p><strong>Estilização de Texto:</strong></p>
+            <pre>
+        <div class="dark bg-gray-950 rounded-md">
+          <div class="p-4 overflow-y-auto">
+            <code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">p</span> {
+              <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+              <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+              <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+              }
+            </code>
+          </div>
+        </div>
+      </pre>
+          </li>
+          <li>
+            <p><strong>Estilização de Caixas:</strong></p>
+            <pre>
+        <div class="dark bg-gray-950 rounded-md">
+          <div class="p-4 overflow-y-auto">
+            <code class="!whitespace-pre hljs language-css"><span class="hljs-selector-class">.box</span> {
+              <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+              <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+              <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f4f4f4</span>;
+              <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ccc</span>;
+              <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+              <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span>;
+              }
+            </code>
+          </div>
+      </div>
+    </pre>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+          <p>Existem muitas propriedades CSS disponíveis para estilizar elementos HTML de diversas maneiras. Abaixo
+            estão
+            algumas das principais propriedades amplamente utilizadas:</p>
+          <ol>
+            <li>
+              <p><strong><code>color</code>:</strong> Define a cor do texto.</p>
+            </li>
+            <li>
+              <p><strong><code>font-size</code>:</strong> Define o tamanho da fonte.</p>
+            </li>
+            <li>
+              <p><strong><code>font-family</code>:</strong> Define a família da fonte a ser usada.</p>
+            </li>
+            <li>
+              <p><strong><code>font-weight</code>:</strong> Define a espessura da fonte (por exemplo, normal, negrito).
+              </p>
+            </li>
+            <li>
+              <p><strong><code>text-align</code>:</strong> Alinha o texto dentro do elemento (por exemplo, à esquerda, à
+                direita, centralizado).</p>
+            </li>
+            <li>
+              <p><strong><code>background-color</code>:</strong> Define a cor de fundo do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>padding</code>:</strong> Define o preenchimento dentro do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>margin</code>:</strong> Define a margem ao redor do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>border</code>:</strong> Define as propriedades da borda do elemento (por exemplo,
+                largura,
+                estilo, cor).</p>
+            </li>
+            <li>
+              <p><strong><code>width</code>:</strong> Define a largura do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>height</code>:</strong> Define a altura do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>display</code>:</strong> Define como o elemento deve ser exibido (por exemplo,
+                <code>block</code>, <code>inline</code>, <code>flex</code>).
+              </p>
+            </li>
+            <li>
+              <p><strong><code>position</code>:</strong> Define o método de posicionamento do elemento (por exemplo,
+                <code>relative</code>, <code>absolute</code>, <code>fixed</code>).
+              </p>
+            </li>
+            <li>
+              <p><strong><code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>:</strong> Define
+                as
+                posições de deslocamento do elemento quando <code>position</code> é definido como <code>absolute</code>
+                ou
+                <code>fixed</code>.
+              </p>
+            </li>
+            <li>
+              <p><strong><code>float</code>:</strong> Define se um elemento deve ser flutuante à esquerda ou à direita
+                de outros
+                elementos.</p>
+            </li>
+            <li>
+              <p><strong><code>clear</code>:</strong> Define se um elemento deve ser movido para abaixo de outros
+                elementos
+                flutuantes.</p>
+            </li>
+            <li>
+              <p><strong><code>flex</code>:</strong> Define as propriedades do modelo de layout flexível.</p>
+            </li>
+            <li>
+              <p><strong><code>grid</code>:</strong> Define as propriedades do modelo de layout em grade.</p>
+            </li>
+            <li>
+              <p><strong><code>box-shadow</code>:</strong> Adiciona uma sombra ao redor do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>text-decoration</code>:</strong> Define a decoração do texto (por exemplo, sublinhado,
+                tachado,
+                nenhum).</p>
+            </li>
+          </ol>
+          <p>Essas são apenas algumas das propriedades mais comuns e úteis do CSS. Existem muitas outras propriedades
+            disponíveis que oferecem controle sobre praticamente todos os aspectos da aparência e do layout de um
+            elemento HTML.
+            É importante entender como e quando aplicar essas propriedades para criar estilos eficazes e atraentes para
+            suas
+            páginas da web.</p>
+        </div>
+        <hr>
+
+        <div class="markdown prose w-full break-words dark:prose-invert dark">
+          <p>A propriedade <code>background</code> é uma propriedade CSS usada para definir várias propriedades de fundo
+            de um elemento HTML. Ela oferece uma maneira conveniente de definir várias características do plano de fundo
+            em uma única declaração. Aqui está uma visão geral das propriedades que podem ser definidas usando
+            <code>background</code>:</p>
+          <ol>
+            <li>
+              <p><strong><code>background-color</code>:</strong> Define a cor de fundo do elemento.</p>
+            </li>
+            <li>
+              <p><strong><code>background-image</code>:</strong> Especifica uma imagem a ser usada como plano de fundo.
+              </p>
+            </li>
+            <li>
+              <p><strong><code>background-repeat</code>:</strong> Define como a imagem de plano de fundo deve ser
+                repetida (ou não) ao longo do eixo horizontal e vertical.</p>
+            </li>
+            <li>
+              <p><strong><code>background-position</code>:</strong> Especifica a posição inicial do plano de fundo.</p>
+            </li>
+            <li>
+              <p><strong><code>background-size</code>:</strong> Define o tamanho da imagem de fundo.</p>
+            </li>
+            <li>
+              <p><strong><code>background-attachment</code>:</strong> Define se a imagem de fundo deve se mover com o
+                conteúdo do elemento ou permanecer fixa enquanto o conteúdo rola.</p>
+            </li>
+            <li>
+              <p><strong><code>background-origin</code>:</strong> Define a origem da imagem de fundo (por exemplo,
+                borda, preenchimento, conteúdo).</p>
+            </li>
+            <li>
+              <p><strong><code>background-clip</code>:</strong> Define até onde o plano de fundo (cor ou imagem) se
+                estende.</p>
+            </li>
+          </ol>
+          <p>Por exemplo, aqui está como você pode usar a propriedade <code>background</code> para definir uma cor de
+            fundo e uma imagem de fundo para um elemento:</p>
+          <pre><div class="dark bg-gray-950 rounded-md">
+  <div class="p-4 overflow-y-auto">
+    <code class="!whitespace-pre hljs language-css">
+      <span class="hljs-selector-class">.elemento</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#f4f4f4</span> <span class="hljs-built_in">url</span>(<span class="hljs-string">'imagem.jpg'</span>) no-repeat center center;
+}
+<hr>
+
+<div class="markdown prose w-full break-words dark:prose-invert dark">
+  <p>A propriedade <code>background</code> é uma propriedade CSS usada para definir várias propriedades de fundo de um
+    elemento HTML. Ela oferece uma maneira conveniente de definir várias características do plano de fundo em uma única
+    declaração. Aqui está uma visão geral das propriedades que podem ser definidas usando <code>background</code>:</p>
+  <ol>
+    <li>
+      <p><strong><code>background-color</code>:</strong> Define a cor de fundo do elemento.</p>
+    </li>
+    <li>
+      <p><strong><code>background-image</code>:</strong> Especifica uma imagem a ser usada como plano de fundo.</p>
+    </li>
+    <li>
+      <p><strong><code>background-repeat</code>:</strong> Define como a imagem de plano de fundo deve ser repetida (ou
+        não) ao longo do eixo horizontal e vertical.</p>
+    </li>
+    <li>
+      <p><strong><code>background-position</code>:</strong> Especifica a posição inicial do plano de fundo.</p>
+    </li>
+    <li>
+      <p><strong><code>background-size</code>:</strong> Define o tamanho da imagem de fundo.</p>
+    </li>
+    <li>
+      <p><strong><code>background-attachment</code>:</strong> Define se a imagem de fundo deve se mover com o conteúdo
+        do elemento ou permanecer fixa enquanto o conteúdo rola.</p>
+    </li>
+    <li>
+      <p><strong><code>background-origin</code>:</strong> Define a origem da imagem de fundo (por exemplo, borda,
+        preenchimento, conteúdo).</p>
+    </li>
+    <li>
+      <p><strong><code>background-clip</code>:</strong> Define até onde o plano de fundo (cor ou imagem) se estende.</p>
+    </li>
+  </ol>
+  <p>Por exemplo, aqui está como você pode usar a propriedade <code>background</code> para definir uma cor de fundo e
+    uma imagem de fundo para um elemento:</p>
+  <pre>
+    <div class="dark bg-gray-950 rounded-md">
+      <div class="p-4 overflow-y-auto">
+        <code class="!whitespace-pre hljs language-css"><span class="hljs-selector-class">.elemento</span> {
+        <span class="hljs-attribute">background</span>: <span class="hljs-number">#f4f4f4</span> <span class="hljs-built_in">url</span>(<span class="hljs-string">'imagem.jpg'</span>) no-repeat center center;
+        }
+        </code>
+      </div>
+    </div>
+  </pre>
+          <p>Neste exemplo:</p>
+          <ul>
+            <li><code>#f4f4f4</code> define a cor de fundo.</li>
+            <li><code>url('imagem.jpg')</code> especifica a imagem de fundo.</li>
+            <li><code>no-repeat</code> indica que a imagem de fundo não deve se repetir.</li>
+            <li><code>center center</code> define a posição da imagem de fundo como centralizada tanto horizontalmente
+              quanto
+              verticalmente.</li>
+          </ul>
+          <p>Essa é apenas uma das maneiras de usar a propriedade <code>background</code>. Você pode combinar e ajustar
+            essas
+            propriedades de acordo com suas necessidades de design específicas para criar planos de fundo personalizados
+            para
+            seus elementos HTML.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr class="conteiner">
+  <main class=" conteiner p-15">
+    <div class="p-15 black-gray border-radius-04">
+      <h2 class="dourado">Exercício de fixação</h2>
+      <h4 class="opacity-05">Crie uma página web, com o que vimos na aula.</h4>
+      <p>Exemplo do que pode ser utilizado:</p>
+      <ul>Aplicação de html e Css
+        <li>Todas as principais tags semânticas html</li>
+        <li>Aplicar class - css</li>
+        <li>Aplicar id - css</li>
+        <ul>
+          <p class="dourado">Desafio</p>
+          <li>Ver Exercício do dia da aula e tentar replicar algo parecido</li>
+          <li>Acrescentar novas propriedades para o css</li>
+        </ul>
+      </ul>
+    </div>
+  </main>
+  <footer class="align-center dourado">
+    <p>Caso tenham dúvidas utilizem o grupo para se apoiar, e de toda forma estarei a disposição de todos.</p>
+    <p>--Felipe Costa</p>
+  </footer>
+
+</body>
+
+</html>

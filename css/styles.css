@@ -1,0 +1,109 @@
+body {
+  background: black;
+  color: white
+}
+
+.opacity-05 {
+  opacity: 0.5;
+}
+
+.dourado {
+  color: #fec63e
+}
+
+.border-radius-04 {
+  border-radius: 0.4rem;
+}
+
+.black-gray {
+  background: rgb(31, 31, 36);
+}
+
+.left {
+  text-align: left;
+}
+
+.rigth {
+  text-align: right;
+}
+
+ul {
+  font-weight: bold;
+}
+
+.conteiner {
+  margin: 0 10rem;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.px-15 {
+  padding: 15px 0px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+span {
+  color: white;
+  font-size: small;
+  font-weight: normal;
+}
+
+nav {
+  background-color: #333;
+  display: ruby-text;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  /* Adiciona um efeito de transição */
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.box_code {
+  background-color: #333333;
+  border-radius: 0.3em;
+  padding: 1.0rem;
+}
+
+.code{
+  line-height: 1.5;
+  white-space: pre;
+  font-family: "Söhne Mono", Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+}

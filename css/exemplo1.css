@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 4rem;
+}
+
+.background-body {
+  background-image: url(../img/incenso-natural.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#lotus-logo {
+  width: 20rem;
+  position: absolute;
+}
+
+#titulo {
+  display: inline-flex;
+}
+
+#titulo h1 {
+  padding: 4rem;
+  position: relative;
+  left: 217px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.item {
+  background: #111;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.item:hover {
+  opacity: 0.9;
+}
+
+span {
+  color: #febe01;
+}
+
+p {
+  color: #b2b2b2;
+}
+
+a {
+  background: #febe01;
+  color: #332100;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.opacity {
+  opacity: 0.5
+}
